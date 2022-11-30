@@ -10,12 +10,44 @@
   </head>
   <body>
     <section class="welcome">
+      <nav class="navbar">
+        <div class="container">
+          <!-- Logo -->
+          <h1 id="logo">
+            <a href="https://github.com/CommunityPro/portfolio-html"><img src="" alt="My Logo"></a>
+          </h1>
+          <!-- Navbar links -->
+          <ul class="nav-menu">
+            <li><a class="nav-link" href="#projects">PROJECTS</a></li>
+            <li><a class="nav-link" href="#">CONTACT</a></li>
+            <li><a class="nav-link" href="#">BlOG</a></li>
+            <li>
+              <a class="nav-link btn btn-primary" href="https://github.com/CommunityPro/portfolio-html">RESUME <i class="fas fa-arrow-right"></i></a>
+            </li>
+
+            <!-- Dark/Light mode  -->
+            <!-- <div class="theme-switch">
+              <input type="checkbox" id="switch">
+              <label class="toggle-icons" for="switch">
+                <img class="moon" src="assets/moon.svg">
+                <img class="sun" src="assets/sun.svg">
+              </label>
+            </div> -->
+            <!-- Hamburger menu -->
+          </ul>
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </div>
+      </nav>
       <div class="presentation">
         <h1>Hi, i am <span class="boldText">Mario Alves</span></h1>
         <div class="divisor"></div>
         <p>Self-taught web developer that wants to change people's lives
           and society in a positive way through technology. I like music, games
-          and movies. And i have a special passion in pass my knowledge forward to other people.
+          and movies. And i have a special passion for passing on my knowledge forward to other people.
         </p>
         <a class="btn-standard">PORTFOLIO</a>
         <a href="https://github.com/marioalvesx" class="btn-standard">GITHUB</a>
@@ -24,7 +56,7 @@
         <img src="./assets/Programming-amico.svg" alt="">
       </div>
     </section>  
-    <section class="portfolio">
+    <section class="portfolio container">
       <div class="division"></div>
       <div class="title-section">
         <h1>Works</h1>
@@ -73,7 +105,6 @@
         </div>
       </article>
       <a href="https://github.com/marioalvesx" class="btn btn-secondary" target="_blank">More here <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
-
     </section>  
 
     <footer id="footer">

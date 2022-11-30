@@ -17,6 +17,68 @@ a {
   color: #ffffff;
 }
 
+/* Utilities */
+.container {
+  max-width: 1100px;/*var(--width-medium); */
+  margin: 0 auto;
+  padding: 1rem 2rem;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 20;
+  background: #201b2c;
+}
+
+.navbar .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 20;
+  height: 80px;
+  width: 100%;
+}
+
+.navbar .nav-menu {
+  display: flex;
+  align-items: center;
+  background: #201b2c;
+}
+
+ul {
+  list-style: none;
+}
+
+.navbar .nav-link {
+  margin: 0 1rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.btn-primary {
+  background: #9b53ff;
+  color: #201b2c;
+}
+
+/* hamburger */
+.hamburger {
+  margin-bottom: 0.1rem;
+  display: none;
+}
+
+.bar {
+  display: block;
+  width: 23px;
+  height: 3px;
+  margin: 4px auto;
+  transition: all 0.3s ease-in-out;
+  border-radius: 30px;
+  background-color: #000000;
+}
+
 .welcome {
   width: 100%;
   height: 100%;
@@ -249,6 +311,67 @@ a {
 }
 
 @media only screen and (max-width: 600px){ /* Media querie para celular e telas menores.  */
+  /* Transform menu to hamburguer */
+  .navbar .nav-menu {
+    position: fixed;
+    right: -100vw;
+    top: 4.5rem;
+    flex-direction: column;
+    width: calc(80% - 10px);
+    transition: 0.3s;
+    box-shadow: var(--shadow);
+    padding: 2rem;
+    border-radius: 5px;
+    align-items: flex-start;
+  }
+
+  .navbar .btn {
+    margin: 0;
+    margin-top: 1rem;
+  }
+
+  .nav-menu.active {
+    right: 20px;
+  }
+
+  .nav-menu .nav-link {
+    font-size: 0.9rem;
+    margin: 0 0.2rem;
+  }
+
+  .nav-menu li {
+    margin-bottom: 0.5rem;
+    width: 100%;
+  }
+
+  .nav-menu .btn {
+    width: 100%;
+    text-align: center;
+    margin-top: 0.5rem;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    padding: 0.2rem 0.4rem;
+  }
+
+  .hamburger.active {
+    border: 1px dotted gray;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(6px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  
   .welcome {
     flex-direction: column;
   }
