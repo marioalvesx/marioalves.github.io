@@ -1,8 +1,42 @@
+/* This is the main project styling. Will contain essential CSS styles like:
+   * Flex property
+   * Grid layout
+   * Cards and sections
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* variables */
+:root {
+  /* Colors */
+  --primary-color: #9b53ff;
+  --secondary-color: #8a3cf8;
+  --bg-primary: #201b2c;
+  --text-color: #ffffff;
+  --bg-secondary: #000000;
+  --card-background: #f4f4f4;
+  --bg-secondary-two: #111111;
+
+  ---shadow: 0px 10px 40px -12px #a600ff77;
+
+  /* Font Weight */
+  --weight-small: 400;
+  --weight-semibold: 600;
+  --weight-bold: 800;
+
+  /* Max width */
+  --width-small: 670px;
+  --width-medium: 1100px;
+  --width-large: 1300px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
 
 body {  
   font-family: 'Poppins', sans-serif;
-  background: #201b2c;
+  background: var(--bg-primary);
   line-height: 1.7;
 }
 
@@ -14,14 +48,12 @@ body {
 
 a {
   text-decoration: none;
-  color: #ffffff;
+  color: var(--text-color);
 }
 
-/* Utilities */
-.container {
-  max-width: 1100px;/*var(--width-medium); */
-  margin: 0 auto;
-  padding: 1rem 2rem;
+.navbar #logo img {
+  display: block;
+  width: 55px;
 }
 
 .navbar {
@@ -30,7 +62,7 @@ a {
   left: 0;
   right: 0;
   z-index: 20;
-  background: #201b2c;
+  background: var(--bg-primary);
 }
 
 .navbar .container {
@@ -45,7 +77,7 @@ a {
 .navbar .nav-menu {
   display: flex;
   align-items: center;
-  background: #201b2c;
+  background: var(--bg-primary);
 }
 
 ul {
@@ -55,12 +87,12 @@ ul {
 .navbar .nav-link {
   margin: 0 1rem;
   font-size: 0.8rem;
-  font-weight: 600;
+  font-weight: var(--weight-semibold);
 }
 
 .btn-primary {
-  background: #9b53ff;
-  color: #201b2c;
+  background: var(--primary-color);
+  color: var(--bg-primary);
 }
 
 /* hamburger */
@@ -76,7 +108,7 @@ ul {
   margin: 4px auto;
   transition: all 0.3s ease-in-out;
   border-radius: 30px;
-  background-color: #000000;
+  background-color: var(--bg-secondary-two);
 }
 
 .welcome {
@@ -89,31 +121,11 @@ ul {
 }
 
 .divisor {
-  background: #eae7e7;
+  background: var(--card-background);
   height: 10px;
   width: calc(22% - 5px);
   border-radius: 10px;
   margin: 40px 0px;
-}
-
-.presentation {
-  position: absolute;
-  left: calc(10% - 10px);
-  top: 30%;
-  width: 50%;
-  color: #eae7e7;
-}
-
-.presentation h1 {
-  font-size: 40pt;
-}
-
-.presentation p {
-  text-align: justify;
-  -ms-text-align-last: left;
-  text-align-last: left;
-  width: calc(60% + 20px);
-  margin-bottom: 40px;
 }
 
 .btn-standard {
@@ -125,8 +137,8 @@ ul {
   font-weight: bold;
   letter-spacing: 3px;
   color: #2b134b;
-  background: #9b53ff;
-  box-shadow: 0px 10px 40px -12px #a600ff77;
+  background: var(--primary-color);
+  box-shadow: var(---shadow);
   cursor: pointer;
   text-decoration: none;
 }
@@ -160,10 +172,16 @@ ul {
   width: 100%;
 }
 
+.title-section h2 {
+  font-size: 3rem;
+  line-height: 1.2;
+  transition: 0.2s ease-in-out;
+}
+
 .division {
   width: 100%;
   height: 2px;
-  background-color: #ffffff;
+  background-color: var(--text-color);
   margin: 1.5rem 0;
 }
 
@@ -173,57 +191,6 @@ ul {
   grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: minmax(250px, auto);
   grid-gap: 0.9rem;
-}
-
-#card-pattern {
-  padding: 1.5rem;
-  color: #ffffff;
-  border-radius: 5px;
-  transition: 0.4s ease-in-out;
-  cursor: pointer;
-  width: 21rem;
-}
-
-#card-pattern:hover {
-  box-shadow: inset 0 100px 1000px 10px rgb(0 0 0 / 80%);
-}
-
-#card-pattern:hover .project-info {
-  opacity: 1;
-}
-
-#card-pattern .project-bio h3 {
-  font-size: 0.9rem;
-}
-
-#card-pattern .project-bio p {
-  font-size: 0.83rem;
-}
-
-#card-pattern a {
-  color: #ffffff;
-  transition: 0.25s ease-in-out;
-  font-size: 1.1rem;
-  margin-right: 0.3rem;
-}
-
-#card-pattern a:hover {
-  color: #9b53ff;
-}
-
-/* background image project 1 */
-.card1 {
-  background: url("https://github.com/marioalvesx/bethehero/blob/master/mobile/assets/splash.png?raw=true") center center/cover;
-}
-
-/* background image project 2 */
-.card2 {
-  background: url("https://user-images.githubusercontent.com/22736436/111106513-00042f80-8534-11eb-9f35-68f0495e45d0.png") center center/cover;
-}
-
-/* background image project 3 */
-.card3 {
-  background: url("https://raw.githubusercontent.com/marioalvesx/ecoleta/cd74cec2407fe90b89d7a07875ac540af974d4b0/public/assets/home-background.svg") center center/cover;
 }
 
 .project-info {
@@ -243,22 +210,6 @@ ul {
   margin-left: 10px;
 }
 
-.btn-secondary {
-  align-self: center;
-  margin: 2rem 0;
-  background-color: #ffffff;
-  color: #000000;
-}
-
-.btn {
-  display: inline-block;
-  padding: 0.75rem 1.9rem;
-  border-radius: 30px;
-  text-transform: uppercase;
-  font-size: 0.82rem;
-  transition: 0.3s;
-}
-
 #footer {
   background: #111111;
 }
@@ -276,7 +227,7 @@ ul {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: #ffffff;
+  color: var(--text-color);
   min-height: 160px;
   text-align: center;
 }
@@ -294,6 +245,7 @@ ul {
   height: 20px;
 }
 
+/* Responsiveness */
 @media only screen and (max-width: 950px) { /* Até a largura máxima for essa os seguintes elementos serão acionados: */
   .presentation {
     width: 85%;
@@ -310,8 +262,8 @@ ul {
   }
 }
 
-@media only screen and (max-width: 600px){ /* Media querie para celular e telas menores.  */
-  /* Transform menu to hamburguer */
+@media only screen and (max-width: 670px){ 
+  /* Transform menu to hamburguer-style and occult nav-menu */
   .navbar .nav-menu {
     position: fixed;
     right: -100vw;
@@ -401,22 +353,4 @@ ul {
   .presentation {
     width: 90%;
   }
-}
-
-:root {
-  --primary-color: #ffcd42;
-  --secondary-color: #ffd35c;
-  --bg-primary: #ffffff;
-  --text-color: #222222;
-  --text-color-two: #ffffff;
-  --bg-secondary: #000000;
-  --card-background: #f4f4f4;
-  --bg-secondary-two: #111111;
-  --shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
-  --weight-small: 400;
-  --weight-semibold: 600;
-  --weight-bold: 800;
-  --width-small: 600px;
-  --width-medium: 1100px;
-  --width-large: 1300px;
 }
