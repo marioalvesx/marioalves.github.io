@@ -12,7 +12,7 @@
 Here you found my personal and professional projects, evolution as a web developer and technologies that i have been studying. As well as ways to get in touch with me! 
 
 ## ✔️ Access
-▶️ https://marioalvesx.github.io/
+🌍 https://marioalvesx.github.io/
 
 ## 🧙🏻 Inspiration
 And a lot of code from:
