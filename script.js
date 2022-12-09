@@ -8,27 +8,35 @@ const getStyle = (element, style) =>
 
 const initialTheme = {
   // pick each element color
-  // bg: getStyle(html, "--bg"),
+  bgPrimary: getStyle(html, "--bg-primary"),
+  bgSecondary: getStyle(html, "--bg-secondary"),
+  btnSecondary: getStyle(html, "--btn-secondary"),
+  textColor: getStyle(html, "--text-color"),
+  cardBackground: getStyle(html, "--card-background"),
+  bgSecondaryTwo: getStyle(html, "--bg-secondary-two")
 }
 
 const lightMode = {
-  // bgPrimary: "#ffffff"
-  // primaryColor: #9b53ff;
-  //   --secondary-color: #8a3cf8;
-  //   --bg-primary: #ffffff;
-  //   --text-color: #000000;
-  //   --text-color-two: #222222;
-  //   --bg-secondary: #ffffff;
-  //   --card-background: #201b2c;
-  //   --bg-secondary-two: #f4f4f4;
-  //   --shadow: 0px 10px 40px -12px #a600ff77;
+  bgPrimary: "#ffffff",
+  bgSecondary: "#9b53ff",
+  btnSecondary: "#ffffff",
+  textColor: "#111111",
+  cardBackground: "#111111",
+  bgSecondaryTwo: "#f4f4f4"
 }
 
-const changeColors = (colors) => {
-  // ...
-}
+const transformKey = key => 
+  "--" + key.replace(/([A-Z])/, "-$1").toLowerCase()
 
-// Source https://gist.github.com/maykbrito/f3744039fcc20db62d6cfd502aa2bc86
+  const changeColors = (colors) => {
+    Object.keys(colors).map(key => 
+      html.style.setProperty(transformKey(key), colors[key]) 
+    )
+  }
+  
+  checkbox.addEventListener("change", ({target}) => {
+    target.checked ? changeColors(lightMode) : changeColors(initialTheme)
+  })
 
 // Hamburguer activate
 const hamburger = document.querySelector(".hamburger");

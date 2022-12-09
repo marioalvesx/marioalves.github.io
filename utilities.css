@@ -51,7 +51,7 @@ h2::selection {
   left: calc(10% - 10px);
   top: 30%;
   width: 50%;
-  color: #eae7e7;
+  color: var(--text-color);
 }
 
 .presentation h1 {
@@ -67,7 +67,6 @@ h2::selection {
 }
 
 /* Buttons */
-
 .btn {
   display: inline-block;
   padding: 0.75rem 1.9rem;
@@ -80,8 +79,8 @@ h2::selection {
 .btn-secondary {
   align-self: center;
   margin: 2rem 0;
-  background-color: #ffffff;
-  color: #000000;
+  background-color: var(--card-background);
+  color: var(--btn-secondary);
 }
 
 /* add hover to resume button */
@@ -92,7 +91,7 @@ h2::selection {
 /* Projects cards */
 #card-pattern {
   padding: 1.5rem;
-  color: var(--card-background);
+  color: #ffffff;
   border-radius: 5px;
   transition: 0.4s ease-in-out;
   cursor: pointer;
@@ -116,7 +115,7 @@ h2::selection {
 }
 
 #card-pattern a {
-  color: var(--text-color);
+  color: #ffffff;
   transition: 0.25s ease-in-out;
   font-size: 1.1rem;
   margin-right: 0.3rem;
@@ -127,7 +126,6 @@ h2::selection {
 }
 
 /* Projects images */
-
 /* background image project 1 */
 .card1 {
   background: url("https://github.com/marioalvesx/bethehero/blob/master/mobile/assets/splash.png?raw=true") center center/cover;

@@ -14,9 +14,9 @@
   --bg-primary: #201b2c;
   --text-color: #ffffff;
   --bg-secondary: #000000;
+  --btn-secondary: #000000;
   --card-background: #f4f4f4;
   --bg-secondary-two: #111111;
-
   ---shadow: 0px 10px 40px -12px #a600ff77;
 
   /* Font Weight */
@@ -136,7 +136,7 @@ ul {
   text-transform: uppercase;
   font-weight: bold;
   letter-spacing: 3px;
-  color: #2b134b;
+  color: var(--bg-primary);
   background: var(--primary-color);
   box-shadow: var(---shadow);
   cursor: pointer;
@@ -168,7 +168,7 @@ ul {
 .title-section {
   text-align: center;
   margin: 5.5rem 0;
-  color: #eae7e7;
+  color: var(--text-color);
   width: 100%;
 }
 
@@ -215,7 +215,11 @@ ul {
 }
 
 #footer p {
-  font-size: 0.8rem;
+  font-size: 0.8rem;  
+}
+
+#footer a {
+  color: #ffffff;
 }
 
 #footer a:hover {
@@ -227,7 +231,7 @@ ul {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: var(--text-color);
+  color: #ffffff;
   min-height: 160px;
   text-align: center;
 }
