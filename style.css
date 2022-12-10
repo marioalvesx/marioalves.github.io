@@ -152,9 +152,15 @@ ul {
 }
 
 /**** Portfolio Section  ****/
+#works {
+  display: flex;
+  flex-direction: column;
+  margin: 16rem auto 5rem;
+}
+
 .portfolio {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -250,6 +256,19 @@ ul {
 }
 
 /* Responsiveness */
+@media only screen and (max-width: 1090px) {
+  .division {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .project {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media only screen and (max-width: 950px) { /* Até a largura máxima for essa os seguintes elementos serão acionados: */
   .presentation {
     width: 85%;
@@ -356,5 +375,17 @@ ul {
 
   .presentation {
     width: 90%;
+  }
+}
+
+@media (max-width: 600px) {
+  .project {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .header-container .btn {
+    border-radius: 5px;
+    width: 80%;
   }
 }
