@@ -140,3 +140,20 @@ h2::selection {
 .card3 {
   background: url("https://raw.githubusercontent.com/marioalvesx/ecoleta/cd74cec2407fe90b89d7a07875ac540af974d4b0/public/assets/home-background.svg") center center/cover;
 }
+
+@media only screen and (max-width: 670px) {
+
+  .presentation {
+    width: 100%;
+    top: 65%;
+  }
+
+  .presentation > h1 {
+    font-size: 35pt;
+  }
+
+  .presentation p {
+    width: calc(75% + 20px);
+  }
+
+}

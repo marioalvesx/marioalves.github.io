@@ -271,18 +271,17 @@ ul {
 
 @media only screen and (max-width: 950px) { /* Até a largura máxima for essa os seguintes elementos serão acionados: */
   .presentation {
-    width: 85%;
+    width: 100%;
   }
 
-  .imageBackground {
-    min-height: 103vh;
-    width: 30%;
-    height: auto;
-    margin-bottom: 10px;
-    margin-left: 183px;
-    position: initial;
-    padding-top: 9px;
+  .presentation p {
+    width: calc(70% + 10px);
   }
+
+  .btn-standard {
+    margin-top: 1px;
+  }
+
 }
 
 @media only screen and (max-width: 670px){ 
@@ -350,9 +349,6 @@ ul {
   .welcome {
     flex-direction: column;
   }
-  .presentation > h1 {
-    font-size: 25pt;
-  }
 
   .welcome > p {
     text-align: justify;
@@ -366,24 +362,27 @@ ul {
   }
 
   .imageBackground {
-    width: 50%;
+    min-height: 103vh;
+    width: 30%;
     height: auto;
-    margin-bottom: 170px;
-    margin-left: 100px;
+    margin-bottom: 10px;
+    margin-left: 235px;
     position: initial;
+    padding-top: 83px;
   }
 
-  .presentation {
-    width: 90%;
+  #works {
+    margin: 17rem auto 5rem;
   }
-}
 
-@media (max-width: 600px) {
   .project {
     display: grid;
     grid-template-columns: 1fr;
   }
 
+}
+
+@media (max-width: 600px) {
   .header-container .btn {
     border-radius: 5px;
     width: 80%;
