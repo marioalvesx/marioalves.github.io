@@ -128,7 +128,10 @@ h2::selection {
 /* Projects images */
 /* background image project 1 */
 .card1 {
-  background: url("https://github.com/marioalvesx/bethehero/blob/master/mobile/assets/splash.png?raw=true") center center/cover;
+  background: url("https://raw.githubusercontent.com/marioalvesx/Tindev/7d09eb4…/frontend/src/assets/logo.svg") center center/cover;
+  background-size: 150px 150px;
+  background-repeat: no-repeat;
+  background-color: burlywood;
 }
 
 /* background image project 2 */
