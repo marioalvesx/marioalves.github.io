@@ -26,3 +26,5 @@ And a lot of code from:
 
 ## ✨ Show your support
 Give a ⭐️ if this project helped you or inspired you in some way!
+Get in touch with me: <a href="https://www.linkedin.com/in/marioalvesneto/">LinkedIn</a>
+Made with 💜 by Mario Alves.
