@@ -22,7 +22,7 @@ const lightMode = {
   btnSecondary: "#ffffff",
   textColor: "#111111",
   cardBackground: "#111111",
-  bgSecondaryTwo: "#f4f4f4"
+  bgSecondaryTwo: "#f4f4f4",
 }
 
 const transformKey = key => 
