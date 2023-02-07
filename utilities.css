@@ -109,8 +109,7 @@ h2::selection {
 
 /* Projects cards */
 #card-pattern {
-  padding: 1.5rem;
-  color: #ffffff;
+  padding: 1.5rem;  
   border-radius: 5px;
   transition: 0.4s ease-in-out;
   cursor: pointer;
@@ -119,10 +118,17 @@ h2::selection {
 
 #card-pattern:hover {
   box-shadow: inset 0 100px 1000px 10px rgb(0 0 0 / 80%);
+  border: 1px solid;
+  border-color: var(--primary-color);
+  animation-duration: 2.5s;
 }
 
 #card-pattern:hover .project-info {
   opacity: 1;
+}
+
+#card-pattern .project-info .project-bio h3, p {
+  color: #ffffff;
 }
 
 #card-pattern .project-bio h3 {
@@ -150,7 +156,7 @@ h2::selection {
   background: url("https://raw.githubusercontent.com/marioalvesx/Tindev/7d09eb4eedc564f00d3d28540ceebfca6c4d6979/frontend/src/assets/logo.svg") center center/cover;
   background-size: 150px 150px;
   background-repeat: no-repeat;
-  background-color: firebrick;
+  background-color: rgb(124 21 21);
 }
 
 /* background image project 2 */
@@ -161,10 +167,33 @@ h2::selection {
 /* background image project 3 */
 .card3 {
   background: url("https://raw.githubusercontent.com/marioalvesx/ecoleta/cd74cec2407fe90b89d7a07875ac540af974d4b0/public/assets/home-background.svg") center center/cover;
+  background-position: 1rem 2rem;
+  background-repeat: no-repeat;
+  background-color: rgb(50 33 83);
+}
+
+/* background image project 4 */
+.card4 {
+  background: url("https://github.com/marioalvesx/StudentsReg/blob/master/src/assets/StudentAppTask.png?raw=true") center center/cover;
+}
+
+/* background image project 4 */
+.card5 {
+  background: url("https://raw.githubusercontent.com/marioalvesx/DevToDoList/47a77e02f60bdd3c8204d490c2a8715bcffda815/src/DevTodoList.Client/wwwroot/Scrum%20board-bro.svg") center center/cover;
+  background-size: 320px 300px;
+  background-repeat: no-repeat;
+  background-color: rgb(50 119 164);
+}
+
+/* background image project 4 */
+.card6 {
+  background: url("https://raw.githubusercontent.com/marioalvesx/CadastroDePessoas/69ee8c71a1ad315e2e551f62393ea7f82463e963/PeopleRegister/Forms-amico.svg") center center/cover;
+  background-size: 250px 280px;
+  background-repeat: no-repeat;
+  background-color: #3f51b5;
 }
 
 @media only screen and (max-width: 670px) {
-
   .presentation {
     width: 100%;
     top: 65%;
