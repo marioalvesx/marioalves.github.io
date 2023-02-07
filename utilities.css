@@ -83,6 +83,7 @@ h2::selection {
   text-align-last: left;
   width: calc(60% + 20px);
   margin-bottom: 40px;
+  color: var(--text-color);
 }
 
 /* Buttons */
@@ -189,7 +190,7 @@ h2::selection {
 .card6 {
   background: url("https://raw.githubusercontent.com/marioalvesx/CadastroDePessoas/69ee8c71a1ad315e2e551f62393ea7f82463e963/PeopleRegister/Forms-amico.svg") center center/cover;
   background-size: 250px 280px;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat;  
   background-color: #3f51b5;
 }
 
