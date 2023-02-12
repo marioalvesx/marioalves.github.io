@@ -16,7 +16,9 @@
   </p>
 </p>
 
-![image 1](https://user-images.githubusercontent.com/22736436/217065394-b1394ce8-e46c-4782-bfcb-93eaf71fcb80.png)
+<p align="center">
+    <img src="https://github.com/marioalvesx/marioalvesx.github.io/blob/main/devtodo-frontend.gif" alt="demo" height="395">
+</p>
 
 ## ➡️ Presentation
 Here you found my personal and professional projects, evolution as a web developer and technologies that i have been studying. As well as ways to get in touch with me! 
